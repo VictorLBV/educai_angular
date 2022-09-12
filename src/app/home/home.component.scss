@@ -20,9 +20,57 @@ body{
     font-size: 24px;
 }
 
+.icones{
+    border: 2px solid darkblue;
+    border-radius: 25px;
+    height: 50%;
+    position:static;
+    top: 120%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.icone1 {
+    width: 50%;
+    position: absolute;
+    top: 48rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.icone2 {
+    width: 50%;
+    position: absolute;
+    top: 48rem;
+    bottom: 0;
+    left: 40rem;
+    right: 0;
+}
+
+.icone3 {
+    width: 50%;
+    position: absolute;
+    top: 64rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.icone4 {
+    width: 50%;
+    position: absolute;
+    top: 64rem;
+    bottom: 0;
+    left: 40rem;
+    right: 0;
+}
+
 .botao_home{
     text-align: center;
-    padding-top: 30px;
+    padding-top: 80px;
     padding-bottom: 50px;
 }
 
