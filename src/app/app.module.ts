@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { AulasComponent } from './aulas/aulas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AuthService } from './login/auth.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,9 +22,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
