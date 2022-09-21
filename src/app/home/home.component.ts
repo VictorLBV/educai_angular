@@ -6,6 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  images = [
+    {
+      imageSrc:
+        './assets/images/cards/geografia.jfif',
+      imageAlt: 'nature1',
+    },
+    {
+      imageSrc:
+        './assets/images/cards/geografia.jfif',
+      imageAlt: 'nature2',
+    },
+    {
+      imageSrc:
+        './assets/images/cards/geografia.jfif',
+      imageAlt: 'person1',
+    },
+    {
+      imageSrc:
+        './assets/images/cards/geografia.jfif',
+      imageAlt: 'person2',
+    },
+  ]
 
   constructor() { }
 

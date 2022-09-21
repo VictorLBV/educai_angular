@@ -8,6 +8,26 @@ body {
   margin: 0;
 }
 
+.navbar{
+  background: rgb(53, 53, 187);
+  color: white;
+  font-size: 200%;
+  line-height: 45px;
+  text-decoration: none;
+}
+
+.navbar-nav{
+  margin: 0 auto;
+  border-top: 3px solid;
+  cursor: pointer;
+}
+
+.navbar-nav:hover{
+  transition: 0.7s;
+  color: orange;
+}
+
+
 .titulo {
   text-align: center;
   font-size: 500%;

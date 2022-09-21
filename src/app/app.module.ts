@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,7 @@ import { AulasComponent } from './aulas/aulas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthService } from './login/auth.service';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from './carousel/carousel.module';
 
 @NgModule({
   declarations: [
@@ -23,9 +24,13 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HomeModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    CarouselModule
   ],
   providers: [AuthService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class AppModule { }

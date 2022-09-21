@@ -7,6 +7,22 @@
 </head>
 
 <body>
+    <!--<header class="navbar">
+        <div class="navbar-nav">
+            <p [routerLink]="['/home']">E D U C A Í</p>
+        </div>
+    </header>
+-->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <li class="navbar-nav">
+                    <p [routerLink]="['']">E D U C A Í</p>
+                </li>
+            </div>
+        </nav>
+    </header>
+
     <form action="/action_page.php" method="post">
         <div class="imgcontainer">
             <img src="assets/images/cards/img_avatar2.png" alt="Avatar" class="avatar">
@@ -14,10 +30,12 @@
 
         <div class="container login">
             <label for="uname"><b>Username</b></label>
-            <input [(ngModel)]="usuario.nome" id="usuario" type="text" placeholder="Enter Username" name="uname" required>
+            <input [(ngModel)]="usuario.nome" id="usuario" type="text" placeholder="Enter Username" name="uname"
+                required>
 
             <label for="psw"><b>Password</b></label>
-            <input [(ngModel)]="usuario.senha" id="senha" type="password" placeholder="Enter Password" name="psw" required>
+            <input [(ngModel)]="usuario.senha" id="senha" type="password" placeholder="Enter Password" name="psw"
+                required>
 
             <button type="submit" (click)="fazerLogin()">Login</button>
             <label>
